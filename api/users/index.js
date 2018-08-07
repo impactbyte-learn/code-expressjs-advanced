@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const controller = require('./controllers')
+const controller = require('./controller')
 
 router.get('/', controller.get);
 router.get('/search', controller.search) // req.query: ?q=keyword
